@@ -1,5 +1,3 @@
-using System.Security.Claims;
-using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
 using API.Errors;
@@ -95,6 +93,10 @@ namespace API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
+            if (this.CheckEmailExistsAsync(registerDto.Email).Result.Value)
+            {
+                return new BadRequestObjectResult(new ApiValidationErrorResponse { Errors = new[] { "Email Adress it's in use" } });
+            }
             var user = new AppUser
             {
                 DisplayName = registerDto.DisplayName,
