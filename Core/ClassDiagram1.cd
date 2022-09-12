@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Core.Entities.BaseEntity" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.BasketItem" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAQAAAAAAAAAAAAAAAAAAAAAQAAgAAJAAA=</HashCode>
+      <FileName>Entities\BasketItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.CustomerBasket" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAACAAAAAAAAAAAAAgAAAAAAAAAAAUAAAA=</HashCode>
+      <FileName>Entities\CustomerBasket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.Product" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAQAQAwAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.ProductBrand" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ProductBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.ProductType" Collapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.Identity.Address" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAIAAAEAAIAAAAAAAAAAAIABQAAAAg=</HashCode>
+      <FileName>Entities\Identity\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.Identity.AppUser" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Identity\AppUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.OrderAggregate.Address" Collapsed="true">
+    <Position X="6.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAIABQAAAAg=</HashCode>
+      <FileName>Entities\OrderAggregate\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.OrderAggregate.DeliveryMethod" Collapsed="true">
+    <Position X="16.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAgAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\OrderAggregate\DeliveryMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.OrderAggregate.Order" Collapsed="true">
+    <Position X="18.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAABAAEAAEEAAAAAAAAAAAAAEAAAAQAAAAgAAEAAAA=</HashCode>
+      <FileName>Entities\OrderAggregate\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.OrderAggregate.OrderItem" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAA=</HashCode>
+      <FileName>Entities\OrderAggregate\OrderItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Entities.OrderAggregate.ProductItemOrdered" Collapsed="true">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Entities\OrderAggregate\ProductItemOrdered.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Specifications.BaseSpecification&lt;T&gt;" Collapsed="true">
+    <Position X="13.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAABEgAAAAgAAAAQAAAAAAAAAAAAAAwAAFAAAAAEAA=</HashCode>
+      <FileName>Specifications\BaseSpecification.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Core.Specifications.OrderByPaymentIntentIdSpecification" Collapsed="true">
+    <Position X="15" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\OrderByPaymentIntentIdSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Specifications.OrdersWithItemsAndOrderingSpecification" Collapsed="true">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\OrdersWithItemsAndOrderingSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Specifications.ProductSpecParams" Collapsed="true">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAQEAAAAAQAAAAggAAAEAAwAAA=</HashCode>
+      <FileName>Specifications\ProductSpecParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Specifications.ProductWithFiltersForCountSpecification" Collapsed="true">
+    <Position X="17.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\ProductWithFiltersForCountSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core.Specifications.ProductWithTypesAndBrandsSpecification" Collapsed="true">
+    <Position X="12.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Specifications\ProductWithTypesAndBrandsSpecification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Core.Specifications.ISpecification&lt;T&gt;" Collapsed="true">
+    <Position X="7" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEAAAAAgAAAAQAAAAAAAAAAAAAAAAAFAAAAAEAA=</HashCode>
+      <FileName>Specifications\ISpecification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Core.Entities.OrderAggregate.OrderStatus" Collapsed="true">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAIAAAIAAAAAA=</HashCode>
+      <FileName>Entities\OrderAggregate\OrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

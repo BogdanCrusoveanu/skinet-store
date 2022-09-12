@@ -7,7 +7,11 @@
           class="custom-select mb-4"
           (change)="onSortSelected($event.target.value)"
         >
-          <option *ngFor="let sort of sortOptions" [value]="sort.value">
+          <option
+            *ngFor="let sort of sortOptions"
+            [value]="sort.value"
+            [selected]="shopParams.sort === sort.value"
+          >
             {{ sort.name }}
           </option>
         </select>
@@ -17,7 +21,7 @@
           <li
             class="list-group-item"
             *ngFor="let brand of brands"
-            [class.active]="brand.id === this.shopParams.brandId"
+            [class.active]="brand.id === shopParams.brandId"
             [value]="brand.id"
             (click)="onBrandSelected(brand.id)"
             style="cursor: pointer"
@@ -30,7 +34,7 @@
           <li
             class="list-group-item"
             *ngFor="let type of types"
-            [class.active]="type.id === this.shopParams.typeId"
+            [class.active]="type.id === shopParams.typeId"
             [value]="type.id"
             (click)="onTypeSelected(type.id)"
             style="cursor: pointer"
@@ -44,9 +48,9 @@
     <section class="col-9">
       <div class="d-flex justify-content-between align-items-center pg-2">
         <app-paging-header
-          [pageNumber]="this.shopParams.pageNumber"
-          [pageSize]="this.shopParams.pageSize"
-          [totalCount]="this.totalCount"
+          [pageNumber]="shopParams.pageNumber"
+          [pageSize]="shopParams.pageSize"
+          [totalCount]="totalCount"
         ></app-paging-header>
         <div class="form-inline mt-2" *ngIf="products">
           <input
@@ -76,8 +80,9 @@
         class="d-flex justify-content-center"
       >
         <app-pager
-          [pageSize]="this.shopParams.pageSize"
-          [totalCount]="this.totalCount"
+          [pageSize]="shopParams.pageSize"
+          [totalCount]="totalCount"
+          [pageNumber]="shopParams.pageNumber"
           (pageChanged)="onPageChanged($event)"
         ></app-pager>
       </div>
